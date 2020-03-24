@@ -1,5 +1,5 @@
 //add globl css here
-import "../public/style.csss"
+import "../public/style.css"
 
 
 
