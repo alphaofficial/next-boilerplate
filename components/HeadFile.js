@@ -1,6 +1,6 @@
 import Head from 'next/Head'
 
-export default function HeadFile(){
+export default function HeadFile(props){
 
     return(
         <Head>
@@ -9,9 +9,7 @@ export default function HeadFile(){
             <meta name="description" content=""/>
             <meta name="keywords" content=""/>
 
-            <title>Mega Strore</title>
-            <link href="/assets/css/page.min.css" rel="stylesheet" />
-            <link href="/assets/css/style.css" rel="stylesheet" />
+            <title>{props.title || "Welcome" }</title>
         </Head>
     )
 }

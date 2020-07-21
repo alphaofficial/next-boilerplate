@@ -7,14 +7,9 @@ import fetch from 'isomorphic-unfetch'
 
 
 
-function HomePage({jokes}) {
-    return <div>Chuck norris joke: {jokes}</div>
+function HomePage() {
+    return <div>Hello world</div>
 }
 
-HomePage.getInitialProps = async () => {
-    const res = await fetch('https://api.chucknorris.io/jokes/random')
-    const json = await res.json()
-    return { jokes: json.value }
-}
   
 export default HomePage
